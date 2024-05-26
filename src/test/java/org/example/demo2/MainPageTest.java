@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
+import java.util.List;
 
 public class MainPageTest {
     private WebDriver driver;
@@ -46,5 +47,24 @@ public class MainPageTest {
         // Verify that the search field contains the expected input value
         WebElement searchPageField = driver.findElement(By.cssSelector("#sb_form_q"));
         assertEquals(input, searchPageField.getAttribute("value"));
+    }
+    @Test
+    public void search1() {
+        // Locate the search field and input search text
+        String input = "Selenium dev";
+        WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
+        searchField.sendKeys(input);
+        searchField.submit();
+
+        List<WebElement> results = driver.findElements(By.cssSelector("li.b_algo h2 a"));
+        String expectedUrl = results.get(0).getAttribute("href");
+        clickElement(results, 0);
+        String actualUrl = driver.getCurrentUrl(); // Get the current URL and assert it matches the expected URL
+        assertEquals(expectedUrl, actualUrl, "The URL of the first search result does not match the current URL");
+    }
+
+    private void clickElement(List<WebElement> results, int num) {
+        results.get(num).click(); // Click on the first search result
+
     }
 }
