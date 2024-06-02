@@ -56,10 +56,13 @@ public class MainPageTest {
         searchField.sendKeys(input);
         searchField.submit();
 
+        // Find and continue to the first element fom the SERP
         List<WebElement> results = driver.findElements(By.cssSelector("li.b_algo h2 a"));
         String expectedUrl = results.get(0).getAttribute("href");
         clickElement(results, 0);
-        String actualUrl = driver.getCurrentUrl(); // Get the current URL and assert it matches the expected URL
+
+        // Get the current URL and assert it matches the expected URL
+        String actualUrl = driver.getCurrentUrl();
         assertEquals(expectedUrl, actualUrl, "The URL of the first search result does not match the current URL");
     }
 
