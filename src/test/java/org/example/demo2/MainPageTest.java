@@ -51,7 +51,7 @@ public class MainPageTest {
     @Test
     public void search1() {
         // Locate the search field and input search text
-        String input = "Selenium dev";
+        String input = "Selenium";
         WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
         searchField.sendKeys(input);
         searchField.submit();
@@ -67,7 +67,9 @@ public class MainPageTest {
     }
 
     private void clickElement(List<WebElement> results, int num) {
-        results.get(num).click(); // Click on the first search result
+        WebElement element = results.get(num);
+        System.out.println("Clicking on element: " + element.getText());
+        element.click();
 
     }
 }
