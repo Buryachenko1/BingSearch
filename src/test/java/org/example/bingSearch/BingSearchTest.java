@@ -1,4 +1,4 @@
-package org.example.demo2;
+package org.example.bingSearch;
 
 import org.junit.jupiter.api.*;
 
@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 import java.util.List;
 
-public class MainPageTest {
+public class BingSearchTest {
     private WebDriver driver;
 
     @BeforeEach
