@@ -48,8 +48,12 @@ public class MainPageTest {
         WebElement searchPageField = driver.findElement(By.cssSelector("#sb_form_q"));
         assertEquals(input, searchPageField.getAttribute("value"));
     }
+
     @Test
     public void search1() {
+        // Accept cookies if the button exists
+        WebElement acceptCookiesButton = driver.findElement(By.cssSelector("#bnp_btn_accept"));
+
         // Locate the search field and input search text
         String input = "Selenium";
         WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
@@ -57,7 +61,7 @@ public class MainPageTest {
         searchField.submit();
 
         // Find and continue to the first element fom the SERP
-        List<WebElement> results = driver.findElements(By.cssSelector("li.b_algo h2 a"));
+        List<WebElement> results = driver.findElements(By.cssSelector("#b_results > li.b_algo.b_vtl_deeplinks > h2 > a"));
         String expectedUrl = results.get(0).getAttribute("href");
         clickElement(results, 0);
 

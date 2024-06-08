@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7cf52f-1f5f-4f09-85ab-804f8424d5b4" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8c7cf52f-1f5f-4f09-85ab-804f8424d5b4" name="Changes" comment="search test updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - MainPageTest_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results - MainPageTest_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/demo2/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/demo2/MainPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +57,7 @@
   "keyToString": {
     "JUnit.MainPageTest.executor": "Run",
     "JUnit.MainPageTest.search.executor": "Run",
-    "JUnit.MainPageTest.search1.executor": "Debug",
+    "JUnit.MainPageTest.search1.executor": "Run",
     "JUnit.MainPageTest.search2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -68,7 +69,7 @@
 }]]></component>
   <component name="RunManager" selected="JUnit.MainPageTest.search1">
     <configuration name="MainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SearchProject" />
+      <module name="SearchBing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.demo2.*" />
@@ -98,7 +99,7 @@
       </method>
     </configuration>
     <configuration name="MainPageTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SearchProject" />
+      <module name="SearchBing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.demo2.*" />
@@ -114,7 +115,7 @@
       </method>
     </configuration>
     <configuration name="MainPageTest.search1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SearchProject" />
+      <module name="SearchBing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.demo2.*" />
@@ -130,7 +131,7 @@
       </method>
     </configuration>
     <configuration name="MainPageTest.search2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SearchProject" />
+      <module name="SearchBing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.demo2.*" />
@@ -148,8 +149,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainPageTest.search1" />
-        <item itemvalue="JUnit.MainPageTest.search2" />
         <item itemvalue="JUnit.MainPageTest.search" />
+        <item itemvalue="JUnit.MainPageTest.search2" />
         <item itemvalue="JUnit.MainPageTest" />
         <item itemvalue="JUnit.MainPageTest.search (1)" />
       </list>
@@ -204,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717611930400</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="search test updated">
+      <option name="closed" value="true" />
+      <created>1717615626702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717615626702</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +225,7 @@
     <MESSAGE value="new test added" />
     <MESSAGE value="comments added" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="search test updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="search test updated" />
   </component>
 </project>
